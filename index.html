@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Одинокие Сердца Некста | Выпуск Недели</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Montserrat:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        magazine: {
+                            dark: '#0f0f11',
+                            card: '#1a1a1e',
+                            accent1: '#ff2a5f',
+                            accent2: '#8a2be2',
+                            text: '#e2e2e5',
+                            muted: '#9ca3af'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0f0f11;
+            background-image: radial-gradient(circle at top right, rgba(255, 42, 95, 0.1), transparent 40%),
+                              radial-gradient(circle at bottom left, rgba(138, 43, 226, 0.1), transparent 40%);
+            background-attachment: fixed;
+        }
+        .text-glow {
+            text-shadow: 0 0 20px rgba(255, 42, 95, 0.5);
+        }
+        .magazine-number {
+            -webkit-text-stroke: 1px rgba(255,255,255,0.2);
+            color: transparent;
+        }
+    </style>
+</head>
+<body class="text-magazine-text font-sans antialiased selection:bg-magazine-accent1 selection:text-white">
+
+    <!-- Header / Cover -->
+    <header class="relative w-full min-h-[70vh] flex flex-col items-center justify-center text-center px-4 overflow-hidden py-20">
+        <div class="absolute inset-0 z-0 opacity-20 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
+        <div class="z-10 relative flex flex-col items-center">
+            <div class="flex items-center gap-4 mb-4">
+                <span class="h-[1px] w-12 bg-magazine-accent1"></span>
+                <span class="text-magazine-accent1 font-bold tracking-[0.3em] uppercase text-sm">Эксклюзивный выпуск</span>
+                <span class="h-[1px] w-12 bg-magazine-accent1"></span>
+            </div>
+            <h1 class="font-serif text-6xl md:text-8xl lg:text-9xl font-black uppercase tracking-tight leading-none mb-6 text-glow">
+                Одинокие<br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-magazine-accent1 to-magazine-accent2">Сердца</span><br>
+                Некста
+            </h1>
+            <p class="text-xl md:text-2xl text-magazine-muted font-light max-w-2xl mt-4">
+                Топ 10 участников по активу за неделю. Интриги, скандалы, виртуальные романы и немного кулинарии.
+            </p>
+            <div class="mt-12 animate-bounce">
+                <svg class="w-8 h-8 text-magazine-accent1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Grid -->
+    <main class="container mx-auto px-4 md:px-8 py-12 space-y-24 max-w-6xl">
+
+        <!-- 1. Настя -->
+        <article class="flex flex-col lg:flex-row gap-10 items-center bg-magazine-card p-8 md:p-12 rounded-[2.5rem] shadow-2xl relative overflow-hidden group border border-white/5">
+            <div class="absolute -top-10 -right-10 text-[15rem] font-serif font-black magazine-number z-0 opacity-50 select-none">1</div>
+            
+            <div class="w-full lg:w-2/5 shrink-0 relative z-10">
+                <div class="absolute inset-0 bg-gradient-to-tr from-magazine-accent1 to-magazine-accent2 rounded-[2rem] transform rotate-3 group-hover:rotate-6 transition-transform duration-500 opacity-50"></div>
+                <img src="https://i.imgur.com/dmDLF5U.jpeg" class="w-full h-[500px] object-cover rounded-[2rem] shadow-2xl relative z-10 grayscale-[20%] group-hover:grayscale-0 transition-all duration-500" alt="Настя">
+            </div>
+            
+            <div class="w-full lg:w-3/5 space-y-6 relative z-10">
+                <div>
+                    <h2 class="font-serif text-4xl md:text-5xl font-black uppercase text-white leading-tight">𝐍 (НАСТЯ)</h2>
+                    <h3 class="text-2xl text-transparent bg-clip-text bg-gradient-to-r from-magazine-accent1 to-magazine-accent2 font-bold mt-2">— НОЖИ, БЕССОННИЦА И БОЛЬШАЯ ЛЮБОВЬ 🔥</h3>
+                </div>
+                
+                <p class="text-xl font-serif italic text-magazine-muted border-l-4 border-magazine-accent1 pl-4">
+                    Жизнь Насти (она же 𝐍) в этом чате — это ядреный коктейль из виртуальной похоти, агрессии от недосыпа и внезапных криминальных талантов.
+                </p>
+
+                <div class="space-y-4 text-base md:text-lg leading-relaxed">
+                    <p><strong class="text-magazine-accent1">🔞 ПОСТЕЛЬНЫЕ СЦЕНЫ С ПАБЛО</strong> Если вы зайдете в чат и не увидите, как Настя и Пабло Эскобар (он же Тима) трутся друг об друга бот-командами — значит, Телеграм сломался. Их отношения развиваются стремительно и публично: Тима уже в открытую заявляет, что мечтает привязать Настю к кроватке, но подробности опускает, ссылаясь на то, что остальное «не для детских ушей». Настя, в свою очередь, ревностно охраняет своего «Тиииимочку» от любых посягательств, тает от каждого его слова и готова разорвать любую конкурентку. Идеальная пара, скрепленная виртуальными наручниками.</p>
+                    <p><strong class="text-magazine-accent1">🔪 ОПАСНАЯ ЖЕНЩИНА С ХОЛОДНЫМ ОРУЖИЕМ</strong> Мальчики, будьте осторожны со своими шутками. Оказывается, Настя — не просто милая девочка, а профессиональный метатель ножей. Этому ремеслу её научил папа, и она даже занимала вторые места на соревнованиях по метанию. Так что, когда она в очередной раз угрожает достать ремень или дать кому-то по жопе, возможно, в вас уже летит кухонный тесак.</p>
+                    <p><strong class="text-magazine-accent1">🤬 НОЧНОЙ ДОЗОР И ВОЙНА С 'QQ'</strong> Самый опасный зверь в природе — это невыспавшаяся мать. Поскольку дочь Насти иногда отказывается спать до пяти утра, Настя сидит в чате в режиме вечного ждуна и медленно закипает. Под горячую руку попал бедолага qq (Женя), который решил блеснуть интеллектом и спросил в общем чате, не идет ли у нее до сих пор грудное молоко. Настя моментально взорвалась, выдала гневное голосовое сообщение, в котором разнесла его в пух и прах, и пообещала вышвырнуть его из чата по щелчку пальцев. Женя пытался оправдаться, что «просто хотел пошутить про присосаться», но спасать его было уже поздно.</p>
+                    <p><strong class="text-magazine-accent1">🐟 НОЧНЫЕ ЖОРЫ И ТЕЛЕСНЫЕ МЕЧТЫ</strong> Пока остальные спят, Настя постигает дзен, поедая слабосоленую рыбку. При этом она честно признается чату, что ее грудь — полностью натуральная, но она очень мечтает накопить на абдоминопластику, чтобы убрать растяжки. Никаких секретов, сплошная база!</p>
+                </div>
+
+                <div class="bg-gradient-to-r from-magazine-accent1/20 to-transparent p-6 rounded-2xl border border-magazine-accent1/30">
+                    <p><span class="font-black text-magazine-accent1 uppercase tracking-wider text-xl mr-2">Итог:</span> Настя функционирует в режиме «злая, как собака, но очень любвеобильная». Главное правило выживания рядом с ней: не лезьте к ее Тиме и не задавайте тупых вопросов про лактацию, иначе получите нож прямо в лоб!</p>
+                </div>
+            </div>
+        </article>
+
+        <!-- 2. lumeCore -->
+        <article class="flex flex-col lg:flex-row-reverse gap-10 items-center bg-magazine-card p-8 md:p-12 rounded-[2.5rem] shadow-2xl relative overflow-hidden group border border-white/5">
+            <div class="absolute -top-10 left-0 lg:left-auto lg:-right-10 text-[15rem] font-serif font-black magazine-number z-0 opacity-50 select-none">2</div>
+            
+            <div class="w-full lg:w-2/5 shrink-0 relative z-10">
+                <div class="absolute inset-0 bg-gradient-to-tl from-magazine-accent2 to-magazine-accent1 rounded-[2rem] transform -rotate-3 group-hover:-rotate-6 transition-transform duration-500 opacity-50"></div>
+                <img src="https://i.imgur.com/TVhDB3H.jpeg" class="w-full h-[500px] object-cover rounded-[2rem] shadow-2xl relative z-10 grayscale-[20%] group-hover:grayscale-0 transition-all duration-500" alt="lumeCore">
+            </div>
+            
+            <div class="w-full lg:w-3/5 space-y-6 relative z-10">
+                <div>
+                    <h2 class="font-serif text-4xl md:text-5xl font-black uppercase text-white leading-tight">𝓵𝓾𝓶𝓮𝓒𝓸𝓻𝓮</h2>
+                    <h3 class="text-2xl text-transparent bg-clip-text bg-gradient-to-r from-magazine-accent2 to-magazine-accent1 font-bold mt-2">— ПОДВАЛЬНЫЙ МАНЬЯК, КОНДИТЕР И ГЛАВНЫЙ ФЕТИШИСТ ЧАТА</h3>
+                </div>
+                
+                <p class="text-xl font-serif italic text-magazine-muted border-l-4 border-magazine-accent2 pl-4">
+                    𝓵𝓾𝓶𝓮𝓒𝓸𝓻𝓮 — человек, который сочетает в себе навыки профессионального хакера, повара-кондитера и маньяка из второсортного триллера.
+                </p>
+
+                <div class="space-y-4 text-base md:text-lg leading-relaxed">
+                    <p><strong class="text-magazine-accent2">💇‍♀️ ФЕТИШ НА «ЛОХМАТОСТЬ» И БАРБЕРШОП В ЧАТЕ</strong> Если вы девушка и зашли в этот чат, у меня для вас плохие новости: вы — лохматая. Это не обсуждается, это диагноз, который Люмик ставит каждой встречной. Настя, Сова, Сергеевна, Анима, Катя, Рина — все они прошли через обряд посвящения в «лохматые». Видимо, у парня серьезная травма или скрытое желание открыть свой салон эпиляции. Если вы не лохматая, то вы «мелкая» или «пипсик» — третьего не дано.</p>
+                    <p><strong class="text-magazine-accent2">🧛‍♂️ ИРИС-ТЕРРОРИЗМ И РАЗОРВАННЫЕ ТРУСЫ</strong> Люмик использует игрового бота исключительно для того, чтобы реализовывать свои садистские наклонности. Он не пишет сообщения, он общается командами: куснуть, ущипнуть, отлупить, связать. В чате не осталось ни одной живой женской задницы, по которой бы не прилетел его виртуальный шлепок. Отдельный вид искусства — это его кровопролитные бои с Sova. Ребята перешли на новый уровень романтики: они буквально рвут друг на друге трусы, надевают их оппоненту на голову и советуют друг другу пойти «нагибаться». Высокие отношения!</p>
+                    <p><strong class="text-magazine-accent2">🏰 ДОБРО ПОЖАЛОВАТЬ В ПОДВАЛ (БУНКЕР СО ВРЕМЕН ВОВ)</strong> Главная интрига последних дней — когда же Анима пойдет с ним пить кофе? Люмик настойчиво зазывает ее на свидание, но у него есть зловещий план. Он открыто заявляет, что специально расчистил для нее свой личный подвал-бункер (оставшийся еще со времен Второй мировой), чтобы забрать ее туда навсегда. Остальные девушки тоже в зоне риска: как только он вас поймает, пути назад не будет. Маньяк в открытую признается в своих планах, а чат просто ставит лайки.</p>
+                    <p><strong class="text-magazine-accent2">😭 ТРАГЕДИЯ ВЕКА: ПОТЕРЯННОЕ «ИЗБРАННОЕ»</strong> Но даже у таких жестоких хищников бывают моменты слабости. На днях Люмик словил настоящую паническую атаку и чуть не «вскрылся». Причина? Он случайно удалил свое «Избранное» в Телеграме. По его собственным словам, там была «вся его жизнь» и теперь всё потеряно навсегда. Чат, конечно же, оказал колоссальную поддержку — то есть просто поржал над ним.</p>
+                    <p><strong class="text-magazine-accent2">🍰 МАМИН СБОРЩИК ПК И ПОВАР-КОНДИТЕР</strong> Когда Люмик не кусает лохматых женщин, он любит жестко флексить. То он хвастается своей мощной сборкой ПК для монтажа видео, доказывая всем, что он суровый моушн-дизайнер. А потом внезапно случается разрыв шаблона: наш подвальный маньяк признается, что вообщето учился на повара-кондитера и умеет делать десерты. Маньяк, который печет тортики перед тем, как затащить вас в бункер. Гениально!</p>
+                </div>
+
+                <div class="bg-gradient-to-r from-magazine-accent2/20 to-transparent p-6 rounded-2xl border border-magazine-accent2/30">
+                    <p><span class="font-black text-magazine-accent2 uppercase tracking-wider text-xl mr-2">Итог:</span> Если 𝓵𝓾𝓶𝓮𝓒𝓸𝓻𝓮 зовет вас на кофе — бегите. Если он делает из вашего лица стикерпак — смиритесь. И ради бога, девочки, причешитесь уже, а то он снова начнет спамить стикерами с недовольной мордой!</p>
+                </div>
+            </div>
+        </article>
+
+        <!-- 3. Отец -->
+        <article class="flex flex-col lg:flex-row gap-10 items-center bg-magazine-card p-8 md:p-12 rounded-[2.5rem] shadow-2xl relative overflow-hidden group border border-white/5">
+            <div class="absolute -top-10 -right-10 text-[15rem] font-serif font-black magazine-number z-0 opacity-50 select-none">3</div>
+            
+            <div class="w-full lg:w-2/5 shrink-0 relative z-10">
+                <div class="absolute inset-0 bg-gradient-to-tr from-[#FFD700] to-magazine-accent1 rounded-[2rem] transform rotate-3 group-hover:rotate-6 transition-transform duration-500 opacity-50"></div>
+                <img src="https://i.imgur.com/VB33qfj.png" class="w-full h-[500px] object-cover rounded-[2rem] shadow-2xl relative z-10 grayscale-[20%] group-hover:grayscale-0 transition-all duration-500 bg-white" alt="Отец">
+            </div>
+            
+            <div class="w-full lg:w-3/5 space-y-6 relative z-10">
+                <div>
+                    <h2 class="font-serif text-4xl md:text-5xl font-black uppercase text-white leading-tight">ОТЕЦ</h2>
+                    <h3 class="text-2xl text-transparent bg-clip-text bg-gradient-to-r from-[#FFD700] to-magazine-accent1 font-bold mt-2">— СВЯТОЙ ГРЕШНИК, АРМЯНСКИЙ МУЧАЧО И ЛЮБИТЕЛЬ ДРАНИКОВ</h3>
+                </div>
+                
+                <p class="text-xl font-serif italic text-magazine-muted border-l-4 border-[#FFD700] pl-4">
+                    Встречайте главного праведника всея Телеграма — Отца (в миру Руслана), чья святость заканчивается ровно там, где начинаются женские аватарки. Этот парень мастерски совмещает статус «Тяжелого люкса» с профессиональным попрошайничеством и разводит такую драму, что бразильские сценаристы нервно конспектируют.
+                </p>
+
+                <div class="space-y-4 text-base md:text-lg leading-relaxed">
+                    <p><strong class="text-[#FFD700]">🔞 ГАРЕМ СВЯТОГО ОТЦА</strong> Наш Отче живёт по принципу «ни дня без виртуального засоса». Официально он скрепил узы с «Плохой кисой», предложив ей отношения прямо в чате. Но разве это мешает ему разыгрывать страстную мексиканскую мыльную оперу с Sergeevna 🐍? Они сутками называют друг друга «мучачо» и «мучача», обмениваясь виртуальными укусами и поцелуями. В то же время он не забывает окучивать Рину, вымогая у неё домашние драники и угрожая стать её зятем, если она откажет. А 𝓨𝓸𝓾𝓻 𝓜𝓪𝓼𝓽𝓮𝓻 и вовсе радостно приняла статус «Монашки Святого Отца». Воистину, любви этого человека хватит на весь Некст!</p>
+                    <p><strong class="text-[#FFD700]">🤬 ДУШНОТА ВЕКА: МАМА ИЛИ ЖЕНА?</strong> Главный скандал разразился, когда Отец решил выдать базу про семейные ценности. Он безапелляционно заявил, что мама всегда на первом месте, а жена — ну, это просто жена, и на переднее сиденье машины он посадит только мать. Женская половина чата во главе с Kathrin и Ксюшей моментально вспыхнула и попыталась распять его за такие взгляды, доказывая, что приоритетом должна быть своя семья. Но нашего героя не пробить: он гордо назвал себя «полемистом» и заявил, что не придумывает аргументы, а строит контраргументы. А чуть позже благополучно спалился, что мама до сих пор привозит ему салатики. Шах и мат, девочки!</p>
+                    <p><strong class="text-[#FFD700]">👑 ХРУПКОЕ ЭГО И ВИРТУАЛЬНЫЙ АВТОПАРК</strong> Несмотря на образ альфа-самца, ранить Отца очень легко. Стоило lumeCore неосторожно назвать его «ребёнком» и «челом», как Руслан взорвался, требуя уважения к своему имени и доказывая, что он — полноценный взрослый человек. Чтобы поддержать статус, он регулярно флексит в чате, намекая на свой элитный автопарк из немецких иномарок. А тех, кто сомневается в его интеллекте, безжалостно вызывает на дуэли в шахматы.</p>
+                    <p><strong class="text-[#FFD700]">💰 ПОПРОШАЙКА С ШИРОКОЙ ДУШОЙ</strong> Самое смешное в нашем армянском принце то, что при всех понтах он открыто организовывает «фонды пожертвований» в чате. Он без зазрения совести выпрашивает виртуальные ириски у Sergeevna 🐍 и Насти, чтобы накопить на свои нужды. А в перерывах между сбором милостыни терроризирует музыкального бота, заставляя его бесконечно искать трек под названием «Свага».</p>
+                </div>
+
+                <div class="bg-gradient-to-r from-[#FFD700]/20 to-transparent p-6 rounded-2xl border border-[#FFD700]/30">
+                    <p><span class="font-black text-[#FFD700] uppercase tracking-wider text-xl mr-2">Итог:</span> Отец — это гремучая смесь армянского колорита, завышенного ЧСВ и бесконечного флирта. Прячьте своих женщин и свои ириски, пока он снова не вышел на охоту!</p>
+                </div>
+            </div>
+        </article>
+
+        <!-- 4. MARINA VERBAKH -->
+        <article class="flex flex-col lg:flex-row-reverse gap-10 items-center bg-magazine-card p-8 md:p-12 rounded-[2.5rem] shadow-2xl relative overflow-hidden group border border-white/5">
+            <div class="absolute -top-10 left-0 lg:left-auto lg:-right-10 text-[15rem] font-serif font-black magazine-number z-0 opacity-50 select-none">4</div>
+            
+            <div class="w-full lg:w-2/5 shrink-0 relative z-10">
+                <div class="absolute inset-0 bg-gradient-to-tl from-cyan-500 to-magazine-accent2 rounded-[2rem] transform -rotate-3 group-hover:-rotate-6 transition-transform duration-500 opacity-50"></div>
+                <img src="https://i.imgur.com/8ZdrvHt.png" class="w-full h-[500px] object-cover rounded-[2rem] shadow-2xl relative z-10 grayscale-[20%] group-hover:grayscale-0 transition-all duration-500 bg-zinc-800" alt="MARINA VERBAKH">
+            </div>
+            
+            <div class="w-full lg:w-3/5 space-y-6 relative z-10">
+                <div>
+                    <h2 class="font-serif text-4xl md:text-5xl font-black uppercase text-white leading-tight">MARINA VERBAKH</h2>
+                    <h3 class="text-2xl text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-magazine-accent2 font-bold mt-2">— МИЛФА ИЗ ИТАЛИИ, ТЁТЯ ЭПШТЕЙН И ГРОЗА СКУФОВ</h3>
+                </div>
+                
+                <p class="text-xl font-serif italic text-magazine-muted border-l-4 border-cyan-400 pl-4">
+                    Открывайте форточки, сейчас будет жарко и немного душно, потому что на нашем операционном столе главная сердцеедка и кибер-пиратка чата — Марина! Она же «м𝒾л𝒻а из Италии», она же грозная «Тётя Эпштейн». Эта женщина умудряется сочетать в себе страсть к аниме, токсичные разборки и создание виртуального гарема. Погнали по фактам!
+                </p>
+
+                <div class="space-y-4 text-base md:text-lg leading-relaxed">
+                    <p><strong class="text-cyan-400">💔 БРАЧНЫЕ ИГРЫ И ГАРЕМ</strong> Марина официально состоит в виртуальном браке с ⑉SouL⑉, но это не мешает ей быть главной распутницей чата. Муж постоянно страдает от её угроз наставить ему рога, пока она радостно заявляет, что теперь он — куколд. За её юбку держится добрая половина парней Некста. Например, Dimkagudimka (он же Димэшке) сутками покорно ждет от нее обещанных мармеладок, пока она дразнит его кислыми червячками прямо из своей спальни. Но апогеем её похоти стал кастинг на виртуальный тройничок с Dimczyk и qq. Правда, она сразу выкатила прайс: куча баксов за вид её голой попы. А если у кандидата нет денег, она готова купить ему новый компьютер... но только если он в совершенстве владеет языком.</p>
+                    <p><strong class="text-cyan-400">🎮 СТАЛКЕР, ТЕНТАКЛИ И АНИМЭ</strong> Если вы думаете, что Марина — типичная гламурная дамочка, то вы крупно ошибаетесь. Она суровая геймерша, которая обожает пиратить игры под лозунгом «поднять флаги за капитана». В её топе — Сталкер, Метро и Мертвый Космос. В свежей части Сталкера её жестко «имеют», но она, как истинный мазохист, к этому привыкла. Но самые пикантные подробности всплыли про Врата Балдура: Марина открыто призналась, что крутила там роман и спала с осьминогом! Когда она не отстреливает мутантов, она сохнет по крутым парням из «Магической битвы». А если на душе скребут кошки, наша милфа лечится просмотром добрых шедевров Хаяо Миядзаки и буквально рыдает над ними.</p>
+                    <p><strong class="text-cyan-400">🥊 ВОЙНА ФИЛЬТРОВ СО SPACE</strong> Самый сочный скандал случился после того, как Марина выкатила свое селфи в пятницу. Душнила space посмел заявить, что на кружочках и на фото Марина — это два абсолютно разных человека из-за фильтров. Наша итальянская милфа мгновенно превратилась в берсерка и жестко размазала оппонента. Она окрестила его «престарелым дедом», «троллем низкой системы» и абсолютным «неликвидом», который сидит за картинкой и только воняет. Спэйс пытался отшучиваться, но Марина четко дала понять: она свои фильтры не отдаст, а кортизоловым скуфам с ней общаться не положено.</p>
+                    <p><strong class="text-cyan-400">☕️ КОФЕЙНАЯ ЭСТЕТКА С ИДЕАЛЬНЫМ ЗРЕНИЕМ</strong> В реальной жизни (в паре часов езды от моря и недалеко от Казахстана) Марина пьет любимый кофе Неспрессо, предпочитая капсулы «Колумбия». А еще она настоящий киборг: в юности сделала операцию на глаза, исправив свое жуткое зрение до идеального. Теперь она видит все ваши грехи в самом высоком разрешении!</p>
+                </div>
+
+                <div class="bg-gradient-to-r from-cyan-500/20 to-transparent p-6 rounded-2xl border border-cyan-500/30">
+                    <p><span class="font-black text-cyan-400 uppercase tracking-wider text-xl mr-2">Итог:</span> Марина — это гремучая смесь из взрослого ребенка, кофеманки и суровой повелительницы тентаклей. Подкатывайте к ней осторожно: если не понравитесь, она либо зарежет вас виртуальным ножом, либо обзовет неликвидом и пойдет играть в Сталкер</p>
+                </div>
+            </div>
+        </article>
+
+        <!-- 5. SOVA -->
+        <article class="flex flex-col lg:flex-row gap-10 items-center bg-magazine-card p-8 md:p-12 rounded-[2.5rem] shadow-2xl relative overflow-hidden group border border-white/5">
+            <div class="absolute -top-10 -right-10 text-[15rem] font-serif font-black magazine-number z-0 opacity-50 select-none">5</div>
+            
+            <div class="w-full lg:w-2/5 shrink-0 relative z-10">
+                <div class="absolute inset-0 bg-gradient-to-tr from-orange-500 to-red-500 rounded-[2rem] transform rotate-3 group-hover:rotate-6 transition-transform duration-500 opacity-50"></div>
+                <img src="https://i.imgur.com/0mFM2BV.png" class="w-full h-[500px] object-cover rounded-[2rem] shadow-2xl relative z-10 grayscale-[20%] group-hover:grayscale-0 transition-all duration-500 bg-white" alt="SOVA">
+            </div>
+            
+            <div class="w-full lg:w-3/5 space-y-6 relative z-10">
+                <div>
+                    <h2 class="font-serif text-4xl md:text-5xl font-black uppercase text-white leading-tight">SOVA</h2>
+                    <h3 class="text-2xl text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-red-500 font-bold mt-2">— ПОВЕЛИТЕЛЬНИЦА ТОПОРОВ, РВАНЫХ ТРУСОВ И МИНЕРАЛЬНОГО КЕФИРА</h3>
+                </div>
+                
+                <p class="text-xl font-serif italic text-magazine-muted border-l-4 border-orange-500 pl-4">
+                    Готовьте ваши нервные клетки и прячьте нижнее белье! Наш сегодняшний пациент — Sova (она же официально признанная «расхитительница сердец Некста»). Если вам кажется, что ваша жизнь — это хаос, просто почитайте, как живет наша пернатая мать-героиня.
+                </p>
+
+                <div class="space-y-4 text-base md:text-lg leading-relaxed">
+                    <p><strong class="text-orange-400">🏥 МЕДИЦИНСКАЯ КАРТА И КУЛИНАРНЫЕ ИЗВРАЩЕНИЯ</strong> Наша птичка сейчас функционирует в энергосберегающем режиме: у нее трещина в районе щиколотки, и она вынуждена передвигаться в лангетке. Думаете, это ее останавливает? Как бы не так! На одной ноге она умудряется печь торты к дню рождения младшего сына и готовить свое фирменное зелье. Если вы не знали, эликсир молодости Совы — это кефир, смешанный с минералкой и щедро посыпанный солью. А вы говорите, высокая кухня! Скоро, кстати, она станет на год мудрее (в июне обещает отпраздновать тридцать четыре), но ментально она уже где-то на уровне сварливой бабки.</p>
+                    <p><strong class="text-orange-400">💔 ФЕТИШ НА НИЖНЕЕ БЕЛЬЕ И ТОКСИЧНАЯ ЛЮБОВЬ</strong> Официально она состоит в браке с Монархом, с которым постоянно грозится развестись, но настоящие мексиканские страсти у нее с SouL (Андреем). Их прелюдия — это искусство обложить друг друга трехэтажным матом, называя партнера «пингвином стриженым» или изящным «оселсобакасука». Но главная фишка их отношений — это бесконечное, маниакальное разрывание трусов друг на друге с помощью бота. Они рвут их так часто, что, видимо, ходят по чату абсолютно с голыми задницами. А когда Сова в особом гневе, она обещает порванные трусы надеть оппоненту прямо на голову. Романтика, которой позавидует Шекспир!</p>
+                    <p><strong class="text-orange-400">👑 ГАРЕМ, ЗОЛОТОЙ ДОЖДЬ И УТОПЛЕННИКИ</strong> Пока одни страдают от одиночества, Сова безжалостно сортирует мужиков:<br>
+                    Отец робко подкатывает с предложением руки и сердца, но получает хладнокровное «Я подумала... НЕТ)».<br>
+                    Олег открыто выпрашивает у нее «золотой дождь», но облом — Сова жалуется, что с больной ногой просто не сможет до него доковылять, чтобы свершить задуманное.<br>
+                    Никита пытается записаться к ней во внуки, называя «Тетушкой Совой» и прося уложить его спать, на что заботливая бабуля обещает просто утопить его в углу.<br>
+                    И только красавчик Федя вызывает у нее искреннее эстетическое восхищение.</p>
+                    <p><strong class="text-orange-400">🪓 РАБОЧИЕ БУДНИ МАНЬЯКА</strong> Сова честно признается: «Я и трезвая хуйню творю, мне не обязательно выпить». И мы ей охотно верим! Во-первых, она гордо носит звание «Начальника отдела долбоебов». Во-вторых, ее рабочее место находится с шикарным видом прямо на Всехсвятское кладбище. Идеальная локация, учитывая ее недавние покупки: на маркетплейсах она заказала себе модный костюм, чехол на телефон, а заодно... нож и топорик. Возможно, этот арсенал приготовлен для соседа, который в шесть утра любит будить ее хитами Мэрилина Мэнсона. Либо для Люмика, который без разрешения сделал из ее лица целый стикерпак.</p>
+                </div>
+
+                <div class="bg-gradient-to-r from-orange-500/20 to-transparent p-6 rounded-2xl border border-orange-500/30">
+                    <p><span class="font-black text-orange-400 uppercase tracking-wider text-xl mr-2">Итог:</span> Сова — это нестабильный коктейль из материнской заботы, агрессии, топоров и порванного белья. Не стойте у нее на пути, не включайте громко музыку и, ради бога, прячьте свои трусы!</p>
+                </div>
+            </div>
+        </article>
+
+        <!-- 6. Kathrin (ASTARTA) -->
+        <article class="flex flex-col lg:flex-row-reverse gap-10 items-center bg-magazine-card p-8 md:p-12 rounded-[2.5rem] shadow-2xl relative overflow-hidden group border border-white/5">
+            <div class="absolute -top-10 left-0 lg:left-auto lg:-right-10 text-[15rem] font-serif font-black magazine-number z-0 opacity-50 select-none">6</div>
+            
+            <div class="w-full lg:w-2/5 shrink-0 relative z-10">
+                <div class="absolute inset-0 bg-gradient-to-tl from-fuchsia-500 to-purple-600 rounded-[2rem] transform -rotate-3 group-hover:-rotate-6 transition-transform duration-500 opacity-50"></div>
+                <img src="https://i.imgur.com/gFV0Fwm.png" class="w-full h-[500px] object-cover rounded-[2rem] shadow-2xl relative z-10 grayscale-[20%] group-hover:grayscale-0 transition-all duration-500 bg-white" alt="Kathrin">
+            </div>
+            
+            <div class="w-full lg:w-3/5 space-y-6 relative z-10">
+                <div>
+                    <h2 class="font-serif text-4xl md:text-5xl font-black uppercase text-white leading-tight">Kathrin (ASTARTA)</h2>
+                    <h3 class="text-2xl text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-purple-500 font-bold mt-2">— БОГИНЯ СЕКСА, АДМИНСКИЙ ДЕСПОТ И ЛЮБИТЕЛЬНИЦА ФАКОВ</h3>
+                </div>
+                
+                <p class="text-xl font-serif italic text-magazine-muted border-l-4 border-fuchsia-500 pl-4">
+                    Падайте ниц, холопы! На нашей прожарочной сковороде Старший Администратор, главная звезда ночных эфиров и обладательница самого большого виртуального гарема — Катя! Она же 𝒦𝒶𝓉𝒽𝓇𝒾𝓃, она же Astarta (в честь богини секса и похоти, как она скромно сама заметила). Эта женщина совмещает в себе материнство, жесткую диктатуру и тотальный кибер-разврат.
+                </p>
+
+                <div class="space-y-4 text-base md:text-lg leading-relaxed">
+                    <p><strong class="text-fuchsia-400">🖕 ФАКИ, КОМПЛЕКСЫ И АРХИВЫ</strong> Катя овладела искусством манипуляции мужским вниманием на уровне магистра. Сначала она включает режим «я страшная, я после родов, мне надо скинуть лишние килограммы». Чат начинает наперебой доказывать обратное, но ей этого мало. Чтобы добить аудиторию, она достает козырь — архивы своих фотографий из подростковых времен и периода до декрета, где она в самом «прайме». Мужская половина (включая Пабло Эскобара, A.Сух. и Frederick_Fuck) предсказуемо захлебывается слюной, а Катя кокетливо делает вид, что «не напрашивается на комплименты». А если вы посмеете ей возразить, ждите фирменный Катин жест: фотографию с изящно оттопыренным средним пальцем. Она шлет факи с такой регулярностью, что это уже стало ее официальным языком жестов.</p>
+                    <p><strong class="text-fuchsia-400">🔞 БРАЧНЫЕ ИГРЫ И КИБЕР-НАСИЛИЕ</strong> Если Катя зашла в чат, кто-то обязательно будет виртуально изнасилован. Взаимодействия через бота у нее исключительно радикальные: она с порога может кого-то «засосать», «отлизать» или принудить к «взаимодружественному траху». Ее анкета в боте — это отдельный вид искусства. Среди наград значатся звания вроде «Сладкая киска», «Любит темы секса» и «Лучшая жена». Кстати, о женах! Несмотря на обилие пускающих слюни мужиков, Катя состоит в крепком и счастливом однополом браке с Sergeevna 🐍, ради которой готова порвать любого.</p>
+                    <p><strong class="text-fuchsia-400">👑 КРОВАВЫЙ АДМИН</strong> Не забывайте, с кем имеете дело. У Кати есть кнопка бана, и она не боится ею пользоваться. Зашла какая-то новенькая и не успела записать голосовое сообщение? Вышвырнута без суда и следствия по щелчку пальцев! Катя строго бдит за правилами, иногда прерывая массовые оргии и призывая всех к порядку, хотя через минуту сама же срывается в пучину хаоса.</p>
+                    <p><strong class="text-fuchsia-400">🍼 НОЧНОЙ ДОЗОР И ВАРЮША</strong> Как и полагается истинной матери-героине, Катя живет по расписанию своей маленькой дочки Варюши. Стоит малышке уснуть, как мама тут же врывается в чат, чтобы успеть собрать урожай на виртуальной «ферме», обложить кого-нибудь матом, пожаловаться на недосып и обсудить с девочками размеры мужских достоинств. А на утро — снова в бой, с новыми кружочками и факами.</p>
+                </div>
+
+                <div class="bg-gradient-to-r from-fuchsia-500/20 to-transparent p-6 rounded-2xl border border-fuchsia-500/30">
+                    <p><span class="font-black text-fuchsia-400 uppercase tracking-wider text-xl mr-2">Итог:</span> 𝒦𝒶𝓉𝒽𝓇𝒾𝓃 — это идеальный баланс между заботливой мамочкой и токсичной доминатрикс. Если она вас не забанила, значит, вы ей нравитесь.</p>
+                </div>
+            </div>
+        </article>
+
+        <!-- 7. ABDULAZIZ KARIMOV -->
+        <article class="flex flex-col lg:flex-row gap-10 items-center bg-magazine-card p-8 md:p-12 rounded-[2.5rem] shadow-2xl relative overflow-hidden group border border-white/5">
+            <div class="absolute -top-10 -right-10 text-[15rem] font-serif font-black magazine-number z-0 opacity-50 select-none">7</div>
+            
+            <div class="w-full lg:w-2/5 shrink-0 relative z-10">
+                <div class="absolute inset-0 bg-gradient-to-tr from-green-400 to-emerald-600 rounded-[2rem] transform rotate-3 group-hover:rotate-6 transition-transform duration-500 opacity-50"></div>
+                <img src="https://i.imgur.com/NPdAjBs.jpeg" class="w-full h-[500px] object-cover rounded-[2rem] shadow-2xl relative z-10 grayscale-[20%] group-hover:grayscale-0 transition-all duration-500" alt="ABDULAZIZ KARIMOV">
+            </div>
+            
+            <div class="w-full lg:w-3/5 space-y-6 relative z-10">
+                <div>
+                    <h2 class="font-serif text-4xl md:text-5xl font-black uppercase text-white leading-tight">ABDULAZIZ KARIMOV</h2>
+                    <h3 class="text-2xl text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-emerald-500 font-bold mt-2">— ТАШКЕНТСКИЙ КАЗАНОВА, ПОВЕЛИТЕЛЬ МЕБЕЛИ И МЕГАЛОДОН ИРИСА</h3>
+                </div>
+                
+                <p class="text-xl font-serif italic text-magazine-muted border-l-4 border-green-500 pl-4">
+                    Открывайте форточки, надевайте солнцезащитные очки и прячьте своих женщин! На страницах нашего журнала появляется человек, чье количество виртуальных объятий превышает население небольшой европейской страны. Встречайте: Абдулазиз, он же Абу, он же главный поставщик жаркого ташкентского вайба в наши серые будни!
+                </p>
+
+                <div class="space-y-4 text-base md:text-lg leading-relaxed">
+                    <p><strong class="text-green-400">💋 ГАСТРОЛИ ТАШКЕНТСКОГО РОМАНТИКА И ВИРТУАЛЬНЫЙ ГАРЕМ</strong> Если вы зашли в чат и вас не обнял Абдулазиз — значит, Телеграм сломался. Этот парень начинает день с того, что рассылает лучи любви, засосы и статус «красотка» абсолютно каждой особи женского пола. Astarta (Kathrin), Sergeevna 🐍, N (Настя), Леночка, Маньячка, Mother of dragons (Рина) — ни одна дама не ушла от его команды «Обнять». Наш герой открыто заявляет, что встречался бы со всеми сразу, если бы не километры расстояния, и уже планирует собирать свой личный гарем. Его любвеобильность доходит до того, что он предлагает обниматься буквально до смерти. Настоящий хищник!</p>
+                    <p><strong class="text-green-400">🛋 МЕБЕЛЬНЫЙ МАГНАТ С ДИЕТОЙ ЧЕМПИОНА</strong> За маской сладкого ловеласа скрывается суровый трудяга. Абу работает мебельщиком и познал дзен в режиме «дом-работа-дом-работа». Спит он критически мало, питается исключительно мясом, сладостями и энергетиками со вкусом вишни. А когда кто-то неосторожно называет его динозавром за такой график, Абдулазиз гордо поправляет: он не просто динозавр, он — Мегалодон! При этом он регулярно работает личным синоптиком чата, хвастаясь палящим ташкентским солнцем и вызывая жгучую зависть у замерзающих россиян.</p>
+                    <p><strong class="text-green-400">⚔️ СУРОВЫЕ МУЖСКИЕ БУДНИ: ШАМПУРЫ И УКУСЫ</strong> Мужская половина чата относится к нашему узбекскому брату с уважением, но не без токсичной иронии. Так, например, Максим решил проявить заботу максимально сурово: он виртуально ударил Абдулазиза шампуром по плечу, чтобы позвать его есть шашлык. А вот от местных обитателей подземелья, вроде lumeCore и N, Абу регулярно получает профилактические укусы, на которые отвечает философскими гифками и новыми порциями объятий.</p>
+                    <p><strong class="text-green-400">🤖 ФЕРМЕР-ОЛИГАРХ И МУЗЫКАЛЬНЫЙ ТЕРРОРИСТ</strong> Если Абу не флиртует, значит, он доит бота Ириса. Его жизнь — это бесконечный фарм коинов, сбор урожая и повышение звездности чата. Параллельно с фермерством он терроризирует бота для скачивания музыки, заказывая всё подряд: от бразильского фонка до «Розового вина». Главная драма недели в жизни нашего Мегалодона — это душераздирающая история о том, как у него «украли» аккаунт, но он героически его вернул, заставив чат выдохнуть с облегчением.</p>
+                </div>
+
+                <div class="bg-gradient-to-r from-green-500/20 to-transparent p-6 rounded-2xl border border-green-500/30">
+                    <p><span class="font-black text-green-400 uppercase tracking-wider text-xl mr-2">Итог:</span> Абдулазиз — это неиссякаемый источник гифок, стикеров, токсичной доброты и сахарного флирта. Главное правило общения с ним: если он назвал вас красоткой, просто расслабьтесь и получайте удовольствие, сопротивление бесполезно!</p>
+                </div>
+            </div>
+        </article>
+
+        <!-- 8. Pablo Escobar -->
+        <article class="flex flex-col lg:flex-row-reverse gap-10 items-center bg-magazine-card p-8 md:p-12 rounded-[2.5rem] shadow-2xl relative overflow-hidden group border border-white/5">
+            <div class="absolute -top-10 left-0 lg:left-auto lg:-right-10 text-[15rem] font-serif font-black magazine-number z-0 opacity-50 select-none">8</div>
+            
+            <div class="w-full lg:w-2/5 shrink-0 relative z-10">
+                <div class="absolute inset-0 bg-gradient-to-tl from-indigo-500 to-blue-600 rounded-[2rem] transform -rotate-3 group-hover:-rotate-6 transition-transform duration-500 opacity-50"></div>
+                <img src="https://i.imgur.com/Iequ6Rv.png" class="w-full h-[500px] object-cover rounded-[2rem] shadow-2xl relative z-10 grayscale-[20%] group-hover:grayscale-0 transition-all duration-500 bg-white" alt="Pablo Escobar">
+            </div>
+            
+            <div class="w-full lg:w-3/5 space-y-6 relative z-10">
+                <div>
+                    <h2 class="font-serif text-4xl md:text-5xl font-black uppercase text-white leading-tight">Pablo Escobar</h2>
+                    <h3 class="text-2xl text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-blue-500 font-bold mt-2">— МЕДИАМАГНАТ, ВИРТУАЛЬНЫЙ СУТЕНЕР И ГРОЗА ВПН 🔥</h3>
+                </div>
+                
+                <p class="text-xl font-serif italic text-magazine-muted border-l-4 border-indigo-500 pl-4">
+                    Ну что, сплетники, расчехляем лупы! Сегодня под нашими софитами оказался серый кардинал Некста — 𝙋𝙖𝙗𝙡𝙤 𝙀𝙨𝙘𝙤𝙗𝙖𝙧 (в миру астраханский программист Тимур, таролог, психолог и просто скромный Миротворец). Этот парень умудряется одновременно быть главным ловеласом, издателем желтой прессы и постоянным клиентом виртуальной тюрьмы. Поехали!
+                </p>
+
+                <div class="space-y-4 text-base md:text-lg leading-relaxed">
+                    <p><strong class="text-indigo-400">🔞 БЕЗДОННЫЙ ГАРЕМ ЭСКОБАРОВИЧА</strong> Официально Тима строит из себя романтика и публично страдает от любви к 𝐍 (Насте): он называет её своей булочкой, привязывает к виртуальной кровати и обещает оставить автограф "Здесь был Пабло" прямо у неё на заднице. Они даже прокачали свои отношения в боте до серьезной симпатии. Но не спешите умиляться! Стоит Насте отвернуться, как наш Миротворец превращается в ненасытного зверя. Маргарита в открытую называет его "своим господином" и целует его виртуального удава. Ксюша (экологичная сука) сделала его лицо своим любимым стулом и регулярно на него присаживается. А как только на горизонте мелькает новая женская аватарка (будь то Лера или Дашка), Тимур моментально включает режим следователя, требуя анкету, голосовые сообщения и намекая на грязные мысли. Ну а его традиционная рубрика #селфипятница — это просто узаконенный способ выпрашивать нюдсы у всего чата.</p>
+                    <p><strong class="text-indigo-400">📰 ГЛАВНЫЙ РЕДАКТОР ЖЕЛТОЙ ПРЕССЫ</strong> Если вы думали, что я единственный писака в этом дурдоме, то вы ошибаетесь. Пабло — основатель и идейный вдохновитель местного глянца «Одинокие сердца Некста». Он заставляет участников проходить тесты на тип личности, чтобы потом составлять таблицы совместимости и сводить одинокие души. А еще он работает под прикрытием! Тима анонсировал разрывной спецвыпуск-разоблачение про некую коварную девицу-фейка, которая несколько месяцев дурила голову двум мужикам из чата, скрываясь за чужими фотографиями. Настоящий Пулитцер плачет по этому парню!</p>
+                    <p><strong class="text-indigo-400">🧠 ТОКСИЧНАЯ ЭМПАТИЯ И ТЮРЕМНЫЕ СРОКИ</strong> Пабло искренне гордится своей «эмпатией», но работает она у него весьма специфически. Если вы придете к нему поплакаться, он не будет вас жалеть, а просто хладнокровно раскопает причину и прямо в лоб заявит, что вы сами виноваты во всех своих бедах. Идеальный психолог! Возможно, такая жесткость связана с его криминальным настоящим. Игровой бот Ирис регулярно и безжалостно шьет ему уголовку: Пабло уже отбывал наказания за коммерческий подкуп, мошенничество в сфере компьютерной информации и даже за нарушение правил оборота наркотиков.</p>
+                    <p><strong class="text-indigo-400">🌐 ВЕЧНАЯ БОРЬБА ЗА СВЯЗЬ</strong> Главный враг Эскобара — это не конкуренты за женские сердца, а Роскомнадзор. Его жизнь — это бесконечный поиск рабочего ВПН, чтобы зайти в Инстаграм, пообщаться с нейросетями и скачать порно. Когда прокси отваливается, Пабло впадает в уныние, закидывается мелатонином и уходит в спячку.</p>
+                </div>
+
+                <div class="bg-gradient-to-r from-indigo-500/20 to-transparent p-6 rounded-2xl border border-indigo-500/30">
+                    <p><span class="font-black text-indigo-400 uppercase tracking-wider text-xl mr-2">Итог:</span> 𝙋𝙖𝙗𝙡𝙤 𝙀𝙨𝙘𝙤𝙗𝙖𝙧 — это человек, который может одновременно клеить новеньких, собирать компромат на старожилов и страдать от лагов Телеграма. Девочки, берегите свои сердца и фотопленки, а то окажетесь на обложке его следующего журнала!</p>
+                </div>
+            </div>
+        </article>
+
+        <!-- 9. Frederick_Fuck -->
+        <article class="flex flex-col lg:flex-row gap-10 items-center bg-magazine-card p-8 md:p-12 rounded-[2.5rem] shadow-2xl relative overflow-hidden group border border-white/5">
+            <div class="absolute -top-10 -right-10 text-[15rem] font-serif font-black magazine-number z-0 opacity-50 select-none">9</div>
+            
+            <div class="w-full lg:w-2/5 shrink-0 relative z-10">
+                <div class="absolute inset-0 bg-gradient-to-tr from-stone-500 to-amber-700 rounded-[2rem] transform rotate-3 group-hover:rotate-6 transition-transform duration-500 opacity-50"></div>
+                <img src="https://i.imgur.com/NUxsJ1u.jpeg" class="w-full h-[500px] object-cover rounded-[2rem] shadow-2xl relative z-10 grayscale-[20%] group-hover:grayscale-0 transition-all duration-500" alt="Frederick_Fuck">
+            </div>
+            
+            <div class="w-full lg:w-3/5 space-y-6 relative z-10">
+                <div>
+                    <h2 class="font-serif text-4xl md:text-5xl font-black uppercase text-white leading-tight">𝙁𝙧𝙚𝙙𝙚𝙧𝙞𝙘𝙠_𝙁𝙪𝙘𝙠</h2>
+                    <h3 class="text-2xl text-transparent bg-clip-text bg-gradient-to-r from-stone-400 to-amber-500 font-bold mt-2">— ПРИЗРАК ТУАЛЕТА, КАРЕЛЬСКИЙ РЫБАК И КОВАРНЫЙ СОБЛАЗНИТЕЛЬ</h3>
+                </div>
+                
+                <p class="text-xl font-serif italic text-magazine-muted border-l-4 border-stone-400 pl-4">
+                    Доставайте лупы и готовьтесь к погружению в пучину мужских страданий! Сегодня на нашем прозекторском столе человек с кризисом личности, хронической бессонницей и маниакальной тягой к пиву. Встречайте: 𝙁𝙧𝙚𝙙𝙚𝙧𝙞𝙘𝙠_𝙁𝙪𝙘𝙠 (он же Федя, он же Фак, он же таинственный Игорь из Смоленска).
+                </p>
+
+                <div class="space-y-4 text-base md:text-lg leading-relaxed">
+                    <p><strong class="text-stone-400">🎭 КРИЗИС ИМЕНИ И ФОБИЯ ФОТОАППАРАТА</strong> По паспорту или по чатовским наградам он, может, и Игорь, но упаси вас вселенная его так назвать — он давно откликается только на Федьку или Фака. Наш герой тщательно скрывает свое лицо, аргументируя это тем, что не хочет пугать людей. В качестве подачек он кидает в чат мутные фото, фрагменты уха или половину физиономии. А его коронный прием — дразнить девочек селфи из туалета или историями о том, как он скинет видео из душа, где он голый. Настоящий эстетический терроризм!</p>
+                    <p><strong class="text-stone-400">💔 ВИРТУАЛЬНЫЙ КАЗАНОВА И БИТВЫ НА РЕМНЯХ</strong> Когда дело доходит до женщин, Федя работает по принципу ковровой бомбардировки: как только наступает ночь, он открыто запрашивает свободных девочек для поцелуев перед сном.<br>
+                    С 𝐍 (Настей) у них горячие БДСМ-разборки: они регулярно угрожают друг другу ремнем и обещают дать по жопе. Федя с удовольствием называет ее "Анастас бро", а она шлет ему кружочки и голосовые.<br>
+                    Новенькая Юлия тоже попала под раздачу: стоило ей появиться, как Фак сходу пообещал сделать ей куни, чтобы она никуда не уходила.<br>
+                    А вот с Sova у них война престолов. Наш ловелас получил от нее унизительную награду «Пропердел весь чат», от которой отчаянно пытался откреститься, требуя заменить ее на что-то приличное. В утешение пришлось довольствоваться наградой «Золотые ручки».</p>
+                    <p><strong class="text-stone-400">🐟 БЕССОННИЦА, СТЕЛЛА И КАРЕЛЬСКИЙ СУДАК</strong> Если Фак не просит женского внимания, значит, он страдает от бессонницы. Главная трагедия его жизни — сломавшийся вай-фай, из-за которого перестал работать телевизор, и теперь ему приходится торчать в телефоне. Его единственный побег от суровой реальности и городской суеты — это Карелия. Наш рыбак регулярно флексит эстетичными видео с природой и фоточками свежепойманного судака, доводя чат до голодных слюней. А идеальный вечер Фака — это диван, телевизор и пиво Стелла в обнимку с мясными закусками.</p>
+                </div>
+
+                <div class="bg-gradient-to-r from-stone-500/20 to-transparent p-6 rounded-2xl border border-stone-500/30">
+                    <p><span class="font-black text-stone-400 uppercase tracking-wider text-xl mr-2">Итог:</span> 𝙁𝙧𝙚𝙙𝙚𝙧𝙞𝙘𝙠_𝙁𝙪𝙘𝙠 — это суровый рыбак с душой ранимого романтика, который скрывает лицо, но не скрывает своих желаний. Если хотите его порадовать — налейте ему пива, дайте жареной рыбы и обнимите на ночь!</p>
+                </div>
+            </div>
+        </article>
+
+        <!-- 10. Rina -->
+        <article class="flex flex-col lg:flex-row-reverse gap-10 items-center bg-magazine-card p-8 md:p-12 rounded-[2.5rem] shadow-2xl relative overflow-hidden group border border-white/5">
+            <div class="absolute -top-10 left-0 lg:left-auto lg:-right-10 text-[15rem] font-serif font-black magazine-number z-0 opacity-50 select-none">10</div>
+            
+            <div class="w-full lg:w-2/5 shrink-0 relative z-10">
+                <div class="absolute inset-0 bg-gradient-to-tl from-rose-600 to-red-900 rounded-[2rem] transform -rotate-3 group-hover:-rotate-6 transition-transform duration-500 opacity-50"></div>
+                <img src="https://i.imgur.com/b1S3R1B.png" class="w-full h-[500px] object-cover rounded-[2rem] shadow-2xl relative z-10 grayscale-[20%] group-hover:grayscale-0 transition-all duration-500 bg-white" alt="Rina">
+            </div>
+            
+            <div class="w-full lg:w-3/5 space-y-6 relative z-10">
+                <div>
+                    <h2 class="font-serif text-4xl md:text-5xl font-black uppercase text-white leading-tight">Rina</h2>
+                    <h3 class="text-2xl text-transparent bg-clip-text bg-gradient-to-r from-rose-400 to-red-600 font-bold mt-2">— МАТЕРЬ ДРАКОНОВ, АЛКО-АСТРОЛОГ И КАРАТЕЛЬНАЯ КУЛИНАРИЯ 🔥</h3>
+                </div>
+                
+                <p class="text-xl font-serif italic text-magazine-muted border-l-4 border-rose-500 pl-4">
+                    Уберите от экранов слабонервных и закройте свои чакры! Сегодня на нашем прозекторском столе главная «ИстеРина» всея чата, женщина, которая официально носит титул «Злой админ» и «Гадя Петрович Хреново». Встречайте: 𝓡𝓲𝓷𝓪 — человек, чье настроение меняется быстрее, чем вы успеваете прочитать ее утренний гороскоп.
+                </p>
+
+                <div class="space-y-4 text-base md:text-lg leading-relaxed">
+                    <p><strong class="text-rose-500">🔮 ТОКСИЧНАЯ АСТРОЛОГИЯ И ПРИГОВОРЫ</strong> Каждое утро Рины начинается с того, что она выносит вердикты всему чату с помощью своих фирменных гороскопов. И если вы думаете, что звезды сулят вам богатство и любовь, то спешу разочаровать. В ее мире Овны поклоняются туалету, Скорпионы официально признаются дураками, а Девам советуют закатать губу, потому что они остаются без праздника. Спорить с ее предсказаниями бесполезно, потому что она сама честно признается: «А я тиран».</p>
+                    <p><strong class="text-rose-500">⚖️ СИНДРОМ ВАХТЕРА И БАНЫ ЗА НЕПОНИМАНИЕ</strong> У Рины очень простая, но железобетонная система модерации. Ее главное правило гласит: «Я не знаю что это, а когда мне непонятно, значит бан». Она безжалостно сносит спамеров и фейков, отправляя их в вечный бан, даже не дрогнув. А если мальчики в чате начинают устраивать публичные разборки и мериться своим эго, Рина отправляет их выяснять отношения в личку, чтобы не портили атмосферу. При этом сама она мечтает завести себе парочку рабов, чтобы они просто за нее работали.</p>
+                    <p><strong class="text-rose-500">🍷 МОРКОВНЫЕ БУТЕРБРОДЫ И КОНЬЯЧНЫЕ РЕКИ</strong> Рацион нашей королевы — это отдельный вид извращенного искусства. Во-первых, Рина открыто заявляет: «А я пистец алкашка, любительница коньяка». Во-вторых, когда она не пьет, она питается жареными бутербродами с тертой морковкой, сыром и чесноком, философски замечая, что целоваться ей все равно не с кем. Но главная гастрономическая драма развернулась вокруг драников. Когда местный ловелас Отец начал выпрашивать у нее порцию, Рина жестко обломала его, заявив, что угощать домашними драниками будет исключительно мужа или зятя. Так что, мальчики, путь к ее сердцу (и сковородке) лежит только через ЗАГС!</p>
+                    <p><strong class="text-rose-500">💔 ФИЛОСОФИЯ, СПОНСОРЫ И СОН В ЧАТЕ</strong> Рина — женщина глубокой душевной организации. Она настолько привязана к нашему дурдому, что буквально засыпает с телефоном в обнимку, не выходя из чата. В перерывах между банами она выдает гениальные цитаты. Например, утешает лысеющих мужчин фразой: «Не в волосах счастье, малыш». А когда ей окончательно надоедает работать, она предлагает Евгению (qq) бросить все дела и пойти искать спонсора. Ну а в моменты особой откровенности Матерь Драконов вздыхает и пишет: «Если б я была Олегом, я б перетр... а ладно, не сегодня».</p>
+                </div>
+
+                <div class="bg-gradient-to-r from-rose-600/20 to-transparent p-6 rounded-2xl border border-rose-600/30">
+                    <p><span class="font-black text-rose-500 uppercase tracking-wider text-xl mr-2">Итог:</span> Рина — это опасный коктейль из диктатуры, ежевичного варенья из холодильника и едкого сарказма. Хотите выжить? Читайте ее гороскопы, хвалите ее морковные бутерброды и никогда не бесите, иначе получите бан просто потому, что она так захотела!</p>
+                </div>
+            </div>
+        </article>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-20 py-10 border-t border-white/10 text-center text-magazine-muted bg-magazine-card/50">
+        <h2 class="font-serif text-3xl font-black text-white mb-4 uppercase tracking-widest text-glow">Одинокие Сердца Некста</h2>
+        <p class="text-sm">© Все права на оргии, скандалы и расследования защищены.</p>
+        <p class="text-xs mt-2 opacity-50">Выпуск сгенерирован специально для самых преданных читателей.</p>
+    </footer>
+
+</body>
+</html>
