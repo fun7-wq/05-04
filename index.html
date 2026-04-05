@@ -42,6 +42,39 @@
             -webkit-text-stroke: 1px rgba(255,255,255,0.2);
             color: transparent;
         }
+
+        /* Мобильная адаптация: чтобы фотки не обрезались и всё влезало в экран */
+        @media (max-width: 1023px) {
+            main article {
+                padding: 1.5rem !important;
+                border-radius: 1.5rem !important;
+                gap: 1.5rem !important;
+            }
+            main article img {
+                height: auto !important;
+                max-height: 450px !important;
+                object-fit: contain !important;
+                background-color: rgba(0, 0, 0, 0.25);
+                border-radius: 1.5rem !important;
+            }
+            main article .absolute.inset-0 {
+                border-radius: 1.5rem !important;
+            }
+            .magazine-number {
+                font-size: 8rem !important;
+                top: -1.5rem !important;
+                opacity: 0.3 !important;
+            }
+            header h1 {
+                font-size: 3rem !important;
+                line-height: 1.1 !important;
+            }
+        }
+        @media (max-width: 400px) {
+            header h1 {
+                font-size: 2.5rem !important;
+            }
+        }
     </style>
 </head>
 <body class="text-magazine-text font-sans antialiased selection:bg-magazine-accent1 selection:text-white">
